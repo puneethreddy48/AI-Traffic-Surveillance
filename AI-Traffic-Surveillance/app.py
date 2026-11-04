@@ -37,11 +37,10 @@ st.caption(
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_DIR = BASE_DIR.parent
 
-VIDEO_FOLDER = PROJECT_DIR / "videos"
+VIDEO_FOLDER = BASE_DIR.parent / "videos"
 
-VEHICLE_MODEL_PATH = PROJECT_DIR / "yolo11n.pt"
-PLATE_MODEL_PATH = PROJECT_DIR / "license_plate_detector.pt"
-
+VEHICLE_MODEL_PATH = BASE_DIR.parent / "yolo11n.pt"
+PLATE_MODEL_PATH = BASE_DIR.parent / "license_plate_detector.pt"
 OUTPUT_FOLDER = PROJECT_DIR / "plate_crops" / "all_detections"
 OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
 
