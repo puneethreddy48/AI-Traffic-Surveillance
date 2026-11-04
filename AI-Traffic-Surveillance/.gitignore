@@ -1,0 +1,11 @@
+.venv/
+**/.venv/
+__pycache__/
+*.pyc
+.env
+.streamlit/secrets.toml
+
+**/plate_crops/
+**/annotated_traffic.mp4
+**/plate_readings.csv
+**/traffic_report.csv
